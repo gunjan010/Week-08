@@ -2,7 +2,7 @@ from shape2D import Shape2D
 
 class Rectangle(Shape2D):
     '''returns the area of rectangle by making use of abstract method(area) from Shape2D class'''
-    def area(self):
+    def area(self) -> float: 
         return self.width * self.height
     
     def __str__(self):

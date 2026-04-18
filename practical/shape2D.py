@@ -1,3 +1,12 @@
+# 
+# File: shape2D.py
+# Author: Gunjan Rajak
+# Student Id: a3183498
+# Description: Shape2D class
+# This is my own work as defined by the College's
+# Academic Integrity Policy
+#  
+
 from abc import ABC, abstractmethod
 
 class Shape2D(ABC):
