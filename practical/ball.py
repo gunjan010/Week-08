@@ -11,7 +11,7 @@ from shape3D import Shape3D
 from math import pi
 
 class Ball(Shape3D):
-    """Inherits from Shape3D class. Uses a single side length to set all width, depth and height."""
+    """Inherits from Shape3D class. Uses a single side length to set all width, depth and height. Returns area and volume of ball."""
     def __init__(self, width):
         super().__init__(width, width, width)
         self.radius = width / 2
@@ -28,3 +28,18 @@ class Ball(Shape3D):
     
     def area(self):
         return 4 * pi * self.radius * self.radius
+    
+    def __str__(self):
+        return f"Ball {self.width} X {self.width} X {self.width}\nArea: {self.area()}\nVolume: {self.volume()}"
+    
+# test code
+if __name__ == "__main__":
+    shapes = [
+        Ball(4),
+        Ball(5),
+        Ball(3)
+    ]
+    for shape in shapes:
+        print(shape)
+        pass
+    pass
