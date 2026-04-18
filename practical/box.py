@@ -7,3 +7,19 @@
 # Academic Integrity Policy
 #  
 
+from shape3D import Shape3D
+
+class Box(Shape3D):
+    '''Inherits from Shape3D. Calculates both area and volume of box'''
+    def area(self):
+        area_1 = self.width * self.height
+        area_2 = self.width * self.depth
+        area_3 = self.depth * self.height
+        half_surface_area = area_1 + area_2 + area_3
+        return 2 * half_surface_area
+        
+    def volume(self):
+        return self.width * self.height * self.depth
+
+    def __str__(self):
+        return f"Box {self.width} X {self.height} X {self.depth}\nArea: {self.area()}\nVolume: {self.volume()}"

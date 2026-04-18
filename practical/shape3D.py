@@ -10,6 +10,8 @@
 from shape2D import Shape2D, ABC, abstractmethod
 
 class Shape3D(Shape2D, ABC):
+    '''Abstract base class for all 3D shapes. 
+        Inherits from Shape2D and introduces depth as an additional dimension/attribute'''
     def __init__(self, width, height, depth):
         super().__init__(width, height)
         self.depth = depth
