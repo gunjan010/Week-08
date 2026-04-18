@@ -2,7 +2,7 @@
 # File: polymorphism.py
 # Author: Gunjan Rajak
 # Student Id: a3183498
-# Description: test all classes and polymorphism
+# Description: tests all classes and polymorphism
 # This is my own work as defined by the College's
 # Academic Integrity Policy
 #  

@@ -15,8 +15,9 @@ class Oval(Shape2D):
     def area(self):
         return pi * self.width_radius * self.height_radius
 
-    def __str__(self):
-        return f"Oval {self.width} X {self.height}\nArea: {self.area()}"
+    # Commented out __str__ because implemented __str__ methods to abstract base classes for polymorphism
+    # def __str__(self):
+    #     return f"Oval {self.width} X {self.height}\nArea: {self.area()}"
 
     # getter properties
     @property

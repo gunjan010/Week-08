@@ -29,8 +29,9 @@ class Ball(Shape3D):
     def area(self):
         return 4 * pi * self.radius * self.radius
     
-    def __str__(self):
-        return f"Ball {self.width} X {self.width} X {self.width}\nArea: {self.area()}\nVolume: {self.volume()}"
+    # Commented out __str__ because implemented __str__ methods to abstract base classes for polymorphism
+    # def __str__(self):
+    #     return f"Ball {self.width} X {self.width} X {self.width}\nArea: {self.area()}\nVolume: {self.volume()}"
     
 # test code
 if __name__ == "__main__":

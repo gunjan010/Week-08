@@ -21,8 +21,9 @@ class Box(Shape3D):
     def volume(self):
         return self.width * self.height * self.depth
 
-    def __str__(self):
-        return f"Box {self.width} X {self.height} X {self.depth}\nArea: {self.area()}\nVolume: {self.volume()}"
+    # Commented out __str__ because implemented __str__ methods to abstract base classes for polymorphism
+    # def __str__(self):
+    #     return f"Box {self.width} X {self.height} X {self.depth}\nArea: {self.area()}\nVolume: {self.volume()}"
 
 # test code
 if __name__ == "__main__":

@@ -34,3 +34,19 @@ class Shape2D(ABC):
     @height.setter
     def height(self, height):
         self.__height = height
+
+    # Overwriting the __str__ method
+    def __str__(self) -> str:
+        return "\n".join([
+            " ".join([
+                self.__class__.__name__,
+                " x ".join([
+                    str(self.width),
+                    str(self.height)
+                ])
+            ]),
+            " ".join([
+                "Area:",
+                str(self.area())
+            ])
+        ])

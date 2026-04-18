@@ -28,3 +28,24 @@ class Shape3D(Shape2D, ABC):
     @depth.setter
     def depth(self, depth):
         self.__depth = depth
+
+    # Overwriting the __str__ method
+    def __str__(self) -> str:
+        return "\n".join([
+            " ".join([
+                self.__class__.__name__,
+                " x ".join([
+                    str(self.width),
+                    str(self.height),
+                    str(self.depth)
+                ])
+            ]),
+            " ".join([
+                "Area:",
+                str(self.area())
+            ]),
+            " ".join([
+                "Volume:",
+                str(self.volume())
+            ])
+        ])

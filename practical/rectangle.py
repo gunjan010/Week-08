@@ -14,8 +14,9 @@ class Rectangle(Shape2D):
     def area(self) -> float: 
         return self.width * self.height
     
-    def __str__(self):
-        return f"Rectangle {self.width} X {self.height}\nArea: {self.area()}"
+    # Commented out __str__ because implemented __str__ methods to abstract base classes for polymorphism
+    # def __str__(self):
+    #     return f"Rectangle {self.width} X {self.height}\nArea: {self.area()}"
 
 # test code
 if __name__ == "__main__":

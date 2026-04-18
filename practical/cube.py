@@ -15,8 +15,9 @@ class Cube(Box):
         super().__init__(height, height, height)
         self.height = height
 
-    def __str__(self):
-        return f"Cube {self.height} X {self.height} X {self.height}\nArea: {self.area()}\nVolume: {self.volume()}"
+    # Commented out __str__ because implemented __str__ methods to abstract base classes for polymorphism
+    # def __str__(self):
+    #     return f"Cube {self.height} X {self.height} X {self.height}\nArea: {self.area()}\nVolume: {self.volume()}"
 
 # test code
 if __name__ == "__main__":

@@ -15,8 +15,9 @@ class Square(Rectangle):
         super().__init__(height, height)
         self.height = height
 
-    def __str__(self):
-        return f"Square {self.height} X {self.height}\nArea: {self.area()}"
+    # Commented out __str__ because implemented __str__ methods to abstract base classes for polymorphism
+    # def __str__(self):
+    #     return f"Square {self.height} X {self.height}\nArea: {self.area()}"
 
 # test code
 if __name__ == "__main__":
