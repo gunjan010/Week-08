@@ -1,3 +1,12 @@
+# 
+# File: rectangle.py
+# Author: Gunjan Rajak
+# Student Id: a3183498
+# Description: Rectangle class
+# This is my own work as defined by the College's
+# Academic Integrity Policy
+#  
+
 from shape2D import Shape2D
 
 class Rectangle(Shape2D):
