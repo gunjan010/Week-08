@@ -17,7 +17,7 @@ class Shape2D(ABC):
 
     @abstractmethod
     def area(self) -> float:
-        raise NotImplementedError
+        raise NotImplementedError()
 
     # getters
     @property
