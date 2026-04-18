@@ -10,7 +10,7 @@
 from rectangle import Rectangle
 
 class Square(Rectangle):
-    """Square shape inheriting from Rectangle. Uses a single side length to set both width and height."""
+    """Inherits from Rectangle class. Uses a single side length to set both width and height."""
     def __init__(self, height):
         super().__init__(height, height)
         self.height = height
