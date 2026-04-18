@@ -23,3 +23,14 @@ class Box(Shape3D):
 
     def __str__(self):
         return f"Box {self.width} X {self.height} X {self.depth}\nArea: {self.area()}\nVolume: {self.volume()}"
+
+# test code
+if __name__ == "__main__":
+    shapes = [
+        Box(3, 4, 2),
+        Box(4, 2, 5)
+    ]
+    for shape in shapes:
+        print(shape)
+        pass
+    pass
