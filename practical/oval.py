@@ -26,3 +26,14 @@ class Oval(Shape2D):
     def height_radius(self) -> float:
         return self.height / 2
     
+# test code 
+if __name__ == "__main__":
+    shapes = [
+        Oval(3, 4),
+        Oval(2, 5),
+        Oval(4, 6)
+    ]
+    for shape in shapes:
+        print(shape)
+        pass
+    pass
