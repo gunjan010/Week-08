@@ -18,4 +18,15 @@ class Square(Rectangle):
     def __str__(self):
         return f"Square {self.height} X {self.height}\nArea: {self.area()}"
 
-
+# test code
+if __name__ == "__main__":
+    shapes = [
+        Square(4),
+        Rectangle(2, 3),
+        Rectangle(6, 3),
+        Square(5)
+    ]
+    for shape in shapes:
+        print(shape)
+        pass
+    pass
