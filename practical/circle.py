@@ -18,3 +18,15 @@ class Circle(Oval):
     def __str__(self):
         return f"Circle {self.height} X {self.height}\nArea: {self.area()}"
     
+# test code 
+if __name__ == "__main__":
+    shapes = [
+        Circle(3),
+        Oval(3, 2),
+        Oval(2, 4),
+        Circle(4)
+    ]
+    for shape in shapes:
+        print(shape)
+        pass
+    pass
