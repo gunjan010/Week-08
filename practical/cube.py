@@ -17,3 +17,16 @@ class Cube(Box):
 
     def __str__(self):
         return f"Cube {self.height} X {self.height} X {self.height}\nArea: {self.area()}\nVolume: {self.volume()}"
+
+# test code
+if __name__ == "__main__":
+    shapes = [
+        Cube(4),
+        Box(2, 3, 4),
+        Box(2, 5, 3),
+        Cube(5)
+    ]
+    for shape in shapes:
+        print(shape)
+        pass
+    pass
